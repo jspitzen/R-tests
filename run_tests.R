@@ -1,0 +1,5 @@
+library(devtools)
+install_github('floybix/test_that')
+install.packages( build('testthat', binary=FALSE) , type='source', repos=NULL , dependencies = TRUE)
+library(testthat)
+test_dir('tests')
