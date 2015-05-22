@@ -4,7 +4,7 @@ test_that("5 euqals 5", {
   expect_that(5, equals(5))
 })
 
-test_that("5 equals very close to 5", {
-  expect_that(5, equals(5 + 1e-7))
+# Also test the shortcut
+test_that("5 equals 5 through a shortcut", {
+  expect_equal(5, 5)
 })
-
