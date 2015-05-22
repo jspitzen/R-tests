@@ -1,5 +1,0 @@
-library(devtools)
-install.packages(build('/home/jorick/Projects/R_testing/testthat', binary=FALSE) , type='source', repos=NULL , dependencies = TRUE)
-library(testthat)
-setwd('/home/jorick/Projects/R_testing/R-tests/tests')
-test_file('integers.R' reporter = JUnitReporter$new(file = "test-clustering.xml"))
